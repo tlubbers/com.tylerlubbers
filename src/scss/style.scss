@@ -1,0 +1,472 @@
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+
+@import 'mixins/_vendor.scss';
+@import 'mixins/_position.scss';
+
+//----------------------------------*\
+// CONFIG MODULES
+//----------------------------------*/
+
+// Config modules
+@import 'modules/_vars.scss';
+@import 'modules/_clearfix.scss';
+@import 'modules/_normalize.scss';
+@import 'modules/_defaults.scss';
+
+//----------------------------------*\
+// PARTIALS
+//----------------------------------*/
+
+@import 'partials/_header.scss';
+@import 'partials/_nav.scss';
+@import 'partials/_sidebar.scss';
+@import 'partials/_main.scss';
+@import 'partials/_footer.scss';
+
+//----------------------------------*\
+// OBJECTS & MODULES
+//----------------------------------*/
+
+@import 'modules/_buttons.scss';
+@import 'modules/_inputs.scss';
+@import 'modules/_lists.scss';
+@import 'modules/_typography.scss';
+@import 'modules/_misc.scss';
+@import 'modules/_app.scss';
+
+// Enhancement modules
+@import 'modules/_breakpoints.scss';
+@import 'modules/_print.scss';
+
+//----------------------------------*\
+// VENDOR
+//----------------------------------*/
+
+@import 'vendor/_external.scss';
+
+/* TylerLubbers.com - main.css - Tyler Lubbers - 2015 */
+
+/* ==========================================================================
+   Foundational Styles
+   ========================================================================== */
+/* Std. Defaults */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* Horizontal Rule */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #66666;
+  margin: 1em 0;
+  padding: 0;}
+/* Media Gap Removal */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+/* Remove fieldset values */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;}
+/* Allow Only Vertical TextArea Scaling */
+textarea {
+  resize: vertical;
+}
+/* Broswer Upgrade Prompt */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;}
+
+/* ==========================================================================
+   TylerLubbers.com Custom Styles (Compiled with SASS)
+   ========================================================================== */
+/* Colors */
+$color-type: #2F4F4F; //Dark Gray
+$color-bg-1: #f8f8f8; //Light Gray
+$color-scheme-1: #293C46; //Dark Blue
+$color-scheme-2: #364D5C; //Light Blue
+$color-scheme-3: #f5f5ee; //Off White
+$color-scheme-4: #CAD2C5; //Grey Green
+$color-scheme-5: #B90B00; //Red
+/* Fonts */
+$opensans:    'Open Sans', sans-serif;
+$opensanscond: 'Open Sans Condensed', sans-serif;
+$opensansnoncond: 'Open Sans', sans-serif;
+/* general */
+body {
+  width: 100%;
+  height: 100%;
+  font: 100% $opensans;
+  font-weight: 400;
+  color: $color-type;
+  padding-top: 40px;
+}
+
+::selection {
+  background: $color-scheme-5;
+  text-shadow: none;}
+/* general */
+
+/* nav */
+nav{
+  font: 100% $opensans;
+}
+
+.navbar{
+  background-color: #fff;
+  margin-bottom:  0;
+ // border-bottom: 1px solid $color-type;
+
+}
+.nav.navbar-nav {
+  li a{
+    color: $color-type;
+    padding-bottom: 15px;
+    padding-top: 20px;}
+    :hover, :focus{
+      color: $color-scheme-5;
+      background-color: #fff;
+    }
+}
+
+.navbar-brand{
+  height: 40px;
+  padding: 0px 25px;
+  line-height: 1em;
+
+  :focus{
+    outline: 0;}
+
+  h1{
+    font-weight: 700;
+    font-size: 24px;
+    color: $color-type;
+    font-kerning: normal;}
+    :hover, :focus{
+      color: $color-scheme-5;
+    }
+}
+/* /nav */
+
+/* intro */
+.intro{
+  width: 100%;
+  position: relative;
+  //background-color: $color-scheme-3;
+
+  .cover-photo{
+    width: 264px;
+    height: 320px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url("file:///Users/tyler/Projects/git/tylerlubbers-com/img/coverphoto.png") no-repeat;
+  }
+}
+
+#intro.intro {
+  padding:10px 0 0 0;
+}
+
+.page-scroll{
+  text-align: center;
+}
+/* /intro */
+
+/* profile */
+.profile{
+  width: 100%;
+  position: relative;
+  //background: url("file:///Users/tyler/Projects/git/tylerlubbers-com/img/bgtexture.png") repeat;
+  background-color: $color-scheme-3;
+}
+/* /profile */
+
+/* edu */
+.edu{
+  width: 100%;
+  position: relative;
+  //background: url("file:///Users/tyler/Projects/git/tylerlubbers-com/img/bgtexture.png") repeat;
+  background-color: #fff;
+}
+/* /edu */
+
+/* Skills */
+.skills{
+  width: 100%;
+  position: relative;
+  //background: url("file:///Users/tyler/Projects/git/tylerlubbers-com/img/bgtexture.png") repeat;
+  background-color: $color-scheme-3;
+  h3{
+    margin-bottom: 20px;
+  }
+}
+/* /Skills */
+
+/* exp */
+.exp{
+  width: 100%;
+  position: relative;
+  //background: url("file:///Users/tyler/Projects/git/tylerlubbers-com/img/bgtexture.png") repeat;
+  background-color: #fff;
+}
+/* /exp */
+
+/* Contact */
+.contact{
+  width: 100%;
+  position: relative;
+  //background: url("file:///Users/tyler/Projects/git/tylerlubbers-com/img/bgtexture.png") repeat;
+  background-color: $color-scheme-3;
+}
+
+footer{
+  background-color: $color-type;
+  color: #fff;
+  text-align: center;
+}
+/* Elements and Utilities */
+
+/* sections */
+
+section {
+  padding-top: 10px;
+}
+
+.home-section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  display:block;
+    position:relative;
+    z-index:120;
+}
+.section-heading h2 {
+  margin-bottom: 10px;
+}
+.section-heading i {
+  margin-bottom: 10px;
+}
+.section-heading p{
+  margin-bottom: 15px;
+}
+/* /sections */
+
+/* buttons */
+
+.btn {
+  color: $color-type;
+  text-align: center;
+}
+.btn:hover,
+.btn:focus{
+  color: $color-scheme-5;
+}
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    padding: 7px 16px;
+    border: 2px solid $color-type;
+    border-radius: 50%;
+    font-size: 40px;
+    color: $color-type;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.btn-download{
+  color: #fff;
+  background-color: $color-type;
+}
+.btn-download:hover,
+.btn-download:focus {
+    color: #fff;
+    background-color: $color-scheme-5;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+    border: 2px solid $color-scheme-5;
+    color: $color-scheme-5;
+}
+/* /buttons */
+
+/* skill bars */
+.skill{
+  padding-top: 10px;
+
+  display:block;
+  p{
+    font-size:16px;
+  }
+}
+.skill > svg {
+  height: 95%;
+  display: block;
+}
+
+
+
+/* skill bars */
+
+/* marginbots */
+.marginbot-0{margin-bottom:0 !important;}
+.marginbot-10{margin-bottom:10px !important;}
+.marginbot-20{margin-bottom:20px !important;}
+.marginbot-30{margin-bottom:30px !important;}
+.marginbot-40{margin-bottom:40px !important;}
+.marginbot-50{margin-bottom:50px !important;}
+/* /marginbots */
+
+/* centerify */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+/* ==========================================================================
+   Helper Styles
+   ========================================================================== */
+
+/* Visibility */
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.invalid {
+  border-color: #ce4242;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* Responsive Queries */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* Print Styles */
+@media print {
+  *,
+  *:before,
+  *:after {
+      background: transparent !important;
+      color: #000 !important; /* Black prints faster:
+                                 http://www.sanbeiji.com/archives/953 */
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+      text-decoration: underline;
+  }
+
+  a[href]:after {
+      content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+      content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+      content: "";
+  }
+
+  pre,
+  blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+  }
+
+  thead {
+      display: table-header-group;
+  }
+
+  tr,
+  img {
+      page-break-inside: avoid;
+  }
+
+  img {
+      max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+      orphans: 3;
+      widows: 3;
+  }
+
+  h2,
+  h3 {
+      page-break-after: avoid;
+  }
+}
+

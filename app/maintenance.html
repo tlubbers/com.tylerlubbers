@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tyler Lubbers - Software Developer</title>
+    <meta name="author" content="Tyler Lubbers">
+    <meta name="description" content="Online resume for Tyler Lubbers, a professional software developer in Atlanta, GA.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=0">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,700,300'
+    rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+
+  <body id="page-top">
+
+    <header class="header" role="banner">
+      <nav class="navbar navbar-fixed-top" role-"navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          </button>
+          <a class="navbar-brand" href="#page-top"><h1>Tyler Lubbers</h1></a>
+        </div>
+        <div class="collapse navbar-collapse" id="topNav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+    </header>
+
+    <main class="main" role="main">
+      <section id="intro" class="intro">
+      <div class="container" style="height:100vh">
+      <div class="container">
+          <div class="row">
+            <div class ="container marginbot-50 cover"></div>
+              <img src="assets/img/coverphoto.png" class="img-responsive img-circle center-block">
+          </div>
+        </div>
+        <div class="container-fluid">
+          <h1 class="text-center">Hi, my name is Tyler.<br><small> I'm a software engineer.</small></h1>
+        </div>
+        <div class ="container marginbot-20"></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="page-scroll">
+              <a class="btn btn-circle" href="#contact">
+                <i class="fa fa-angle-double-down fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class ="container marginbot-30"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact text-center home-section">
+      <div class="container">
+        <div class="row">
+          <div class="section-heading">
+              <h1>Oops, Sorry!</h1>
+              <p>I'm in the middle of updating my online resume right now.</p>
+              <p>Until then, Let's talk.<p>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+          <div id="contact_form" class="row">
+            <div class="col-12 col-sm-12 col-lg-12">
+            <form role="form" id="feedbackForm">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+              </div>
+              <span class="help-block" style="display: none;">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <select name="reason" class="form-control">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Place Order">Would like to schedule an interview.</option>
+                <option value="Report Issue">Would like a PDF Resume</option>
+              </select>
+              <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+              </div>
+              <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <textarea rows="5" cols="30" class="form-control" id="message" name="message" placeholder="Enter your message" ></textarea>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+              </div>
+              <span class="help-block" style="display: none;">Please enter a message.</span>
+            </div>
+            <img id="siimage" style="border: 1px solid #000; margin-right: 15px" src="assets/php/securimage/securimage_show.php?sid=<?php echo md5(uniqid()) ?>" alt="CAPTCHA Image" align="left" />
+            <a href="#" onclick="document.getElementById('captcha').src = 'assets/php/securimage/securimage_show.php?' + Math.random(); return false" class="btn btn-download btn-sm">Reload Image</a><br/>
+            <div class="form-group" style="margin-top: 10px;">
+              <div class="input-group">
+                <input type="text" class="form-control" name="captcha_code" id="captcha_code" placeholder="For security, please enter the code displayed in the box." />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-unchecked form-control-feedback"></i></span>
+              </div>
+              <span class="help-block" style="display: none;">Please enter the code displayed within the image.</span>
+            </div>
+            <span class="help-block" style="display: none;">Please enter a the security code.</span>
+            <button type="submit" id="feedbackSubmit" class="btn btn-lg btn-download" data-loading-text="Sending..." style="display: block; margin-top: 10px;">Send Message</button>
+          </form>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/container-->
+    </section>
+
+    </main>
+
+    <aside class="sidebar" role="complementary">
+
+    </aside>
+
+    <footer class="footer" role="contentinfo">
+      <small>© May 2015, Tyler Lubbers</small>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>');</script>
+    <script src="assets/js/scripts.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <script>
+      (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
+      (f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
+      l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXXXXX-XX');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      var $buoop = {vs:{i:10,f:-8,o:-8,s:7,c:-8},unsupported:false,mobile:false,api:4};
+      function $buo_f(){ var e = document.createElement("script");
+      e.src = "//browser-update.org/update.min.js"; document.body.appendChild(e);
+      };try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+      catch(e){window.attachEvent("onload", $buo_f)}
+    </script>
+
+  </body>
+</html>
